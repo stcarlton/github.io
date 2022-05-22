@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
     <title>My Portfolio</title>
   </head>
   <body>
@@ -22,8 +23,167 @@
       <section class="hero-text-box">
         <h1 class="hero-heading">Creativity Like an Ocean Wave</h1>
         <p class="hero-text">Surf on with Seth Carlton's creative projects</p>
+        <p>
+          <a href="#portfolio">
+            <button type="button" class="hero-button">View Portfolio</button>
+          </a>
+        </p>
       </section>
     </header>
     <!--End Hero Header-->
+
+    <!--Begin Portfolio-->
+    <section id="portfolio" class="portfolio-container">
+      <h1>Portfolio</h1>
+      <section class="portfolio-gallery">
+        <div class="gallery-item">
+          <a
+            href="img/ajwain-flower.jpg"
+            class="glightbox"
+            data-glightbox="title: Flower; description: This is an amazing flower picture I took"
+          >
+            <img
+              src="img/ajwain-flower.jpg"
+              alt="An image of a flower"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/cherry-blossoms.jpg" class="glightbox">
+            <img
+              src="img/cherry-blossoms.jpg"
+              alt="An image of cherry blossoms"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/false-bindweed-flower.jpg" class="glightbox">
+            <img
+              src="img/false-bindweed-flower.jpg"
+              alt="An image of a bindweed flower"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/golden-yellow-flower.jpg" class="glightbox">
+            <img
+              src="img/golden-yellow-flower.jpg"
+              alt="An image of a golden yellow flower"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/ground-rose-photograph.jpg" class="glightbox">
+            <img
+              src="img/ground-rose-photograph.jpg"
+              alt="An image of a ground rose"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="img/hawaiian-hibiscus-flower-photograph.jpg"
+            class="glightbox"
+          >
+            <img
+              src="img/hawaiian-hibiscus-flower-photograph.jpg"
+              alt="An image of a hawaiian hibiscus flower"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/moth-orchid.jpg" class="glightbox">
+            <img
+              src="img/moth-orchid.jpg"
+              alt="An image of a moth orchid flower"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/orange-lilly-photograph.jpg" class="glightbox">
+            <img
+              src="img/orange-lilly-photograph.jpg"
+              alt="An image of an orange lily flower"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/purple-flowers.jpg" class="glightbox">
+            <img
+              src="img/purple-flowers.jpg"
+              alt="An image of purple flowers"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/purple-geranium.jpg" class="glightbox">
+            <img
+              src="img/purple-geranium.jpg"
+              alt="An image of a purple geranium flower"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/purple-white-flowers.jpg" class="glightbox">
+            <img
+              src="img/purple-white-flowers.jpg"
+              alt="An image of purple white flowers"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/red-melastomes.jpg" class="glightbox">
+            <img
+              src="img/red-melastomes.jpg"
+              alt="An image of red red melastomes flower"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/very-orange-lilly.jpg" class="glightbox">
+            <img
+              src="img/very-orange-lilly.jpg"
+              alt="An image of a very orange lily"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/white-hydrangea-flower-photograph.jpg" class="glightbox">
+            <img
+              src="img/white-hydrangea-flower-photograph.jpg"
+              alt="An image of a white hydrangea flower"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/white-profusion-flower.jpg" class="glightbox">
+            <img
+              src="img/white-profusion-flower.jpg"
+              alt="An image of a white profusion flower"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+      </section>
+    </section>
+    <!--End Portfolio-->
+    <script src="js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop: true });
+    </script>
   </body>
 </html>
