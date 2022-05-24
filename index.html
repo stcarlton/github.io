@@ -14,7 +14,7 @@
     <nav id="top-nav-bar" class="nav-bar top-nav">
       <h1 class="logo"><a href="index.html"></a></h1>
       <ul class="nav-menu">
-        <li class="nav-item"><a href="#portfolio">Projects</a></li>
+        <li class="nav-item"><a href="#projects">Projects</a></li>
         <li class="nav-item"><a href="#about">About</a></li>
         <li class="nav-item social-nav-item">
           <a
@@ -48,10 +48,10 @@
       <section class="hero-text-box">
         <h1 class="hero-heading">Hello, I am Seth Carlton</h1>
         <p class="hero-text">
-          Browse my creative projects where inspiration has struck
+          Browse my software development projects where inspiration has struck
         </p>
         <p>
-          <a href="#portfolio">
+          <a href="#projects">
             <button type="button" class="hero-button">View Projects</button>
           </a>
         </p>
@@ -60,32 +60,40 @@
     <!--End Hero Header-->
 
     <!--Begin Projects-->
-    <section id="portfolio" class="portfolio-container section-stop">
+    <section id="projects" class="portfolio-container section-stop">
       <h1 class="gallery-text">Projects</h1>
       <section class="portfolio-gallery">
         <div class="gallery-item gallery-text">
           <h2>2022</h2>
           <h3>Description</h3>
           <p>
-            2022 is a 3D game, arcade style top down shooter. Shoot zombies,
-            level up and gain new abilities and talents, increasing your power
-            to maintain pace with infinitely scaling enemies. Hunt down and kill
-            elites to gain items that grant powerful abilities and makes each
-            play through unique. What level can you reach?
+            2022 is a 3D, arcade style top down shooter. Shoot zombies, level
+            up, gain new abilities and increase your power to maintain pace with
+            infinitely scaling enemies. Hunt down and kill elites to gain items
+            that grant powerful abilities and makes each play through unique.
           </p>
           <h3>Technical Overview</h3>
           <p>
             2022 was developed in Unity game engine. Source code is entirely in
             C# and follows MVC architecture design pattern. Visual assets are
             entirely open source. A complete openGL build is playable in the
-            browser in the following window (performance depends on hardware).
+            browser by clicking on the "Load Game" button (performance depends
+            on hardware).
           </p>
         </div>
-        <div class="gallery-item">
-          <iframe
+        <div id="iframeDisplay" class="gallery-item">
+          <button
+            type="button"
+            class="project-button"
+            onClick="displayIframe()"
+          >
+            Load Game
+          </button>
+          <div></div>
+          <!-- <iframe
             src="https://i.simmer.io/@sethtcarlton/zombiesbeta"
             style="width: 720px; height: 450px"
-          ></iframe>
+          ></iframe> -->
         </div>
       </section>
       <section class="portfolio-gallery gallery-text">
@@ -103,7 +111,7 @@
             Casino Simulation is a WPF application using C# for the back end and
             XAML for the front. Source Code architecture follows MVVM design
             pattern, which is well documented using 10+ UML standard design
-            diagrams. Additional design patterns used
+            diagrams.
           </p>
         </div>
         <div class="gallery-item">
@@ -112,25 +120,25 @@
             <div class="mySlides fade">
               <div class="numbertext">1 / 4</div>
               <img src="img/CasinoMenu.jpg" style="width: 100%" />
-              <div class="text">Caption Text</div>
+              <div class="text">Menu</div>
             </div>
 
             <div class="mySlides fade">
               <div class="numbertext">2 / 4</div>
               <img src="img/CasinoBlackjack.jpg" style="width: 100%" />
-              <div class="text">Caption Two</div>
+              <div class="text">Blackjack</div>
             </div>
 
             <div class="mySlides fade">
               <div class="numbertext">3 / 4</div>
               <img src="img/CasinoRoulette.jpg" style="width: 100%" />
-              <div class="text">Caption Three</div>
+              <div class="text">Roulette</div>
             </div>
 
             <div class="mySlides fade">
               <div class="numbertext">4 / 4</div>
               <img src="img/CasinoSlots.jpg" style="width: 100%" />
-              <div class="text">Caption Four</div>
+              <div class="text">Slots</div>
             </div>
 
             <!-- Next and previous buttons -->
@@ -167,8 +175,8 @@
           ProModel.
         </p>
         <p>
-          I have a passion for software design, computer vision, spatial
-          computing and mixed reality.
+          I have a passion for software design, computer vision and mixed
+          reality. My primary area of research is in spatial computing.
         </p>
         <div class="about-social">
           <a href="mailto:scarlton@gmail.com"
@@ -228,6 +236,13 @@
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+    <script>
+      function displayIframe() {
+        document.getElementById("iframeDisplay").innerHTML =
+          '<iframe src="https://i.simmer.io/@sethtcarlton/zombiesbeta" width="720" height="450"></iframe>';
       }
     </script>
 
