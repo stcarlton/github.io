@@ -37,16 +37,20 @@
     <header class="hero-box">
       <section class="hero-image-box">
         <video
+          id="lightningvideo"
           class="hero-video"
-          src="video/ocean.mp4"
+          src="video/lightning.mp4"
           autoplay
           muted
           loop
+          playbackrate="2"
         ></video>
       </section>
       <section class="hero-text-box">
         <h1 class="hero-heading">Seth Carlton</h1>
-        <p class="hero-text">Surf my software development projects.</p>
+        <p class="hero-text">
+          Browse my software projects where inspiration has struck
+        </p>
         <p>
           <a href="#portfolio">
             <button type="button" class="hero-button">View Projects</button>
@@ -112,6 +116,11 @@
       </section>
     </section>
     <!--End About-->
+
+    <script>
+      var vid = document.getElementById("lightningvideo");
+      vid.playbackRate = 0.5;
+    </script>
 
     <script>
       window.onscroll = function () {
