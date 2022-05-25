@@ -196,12 +196,25 @@ video {
 }
 
 .hero-heading {
-  font-size: 2rem;
-  line-height: 2rem;
-  /* letter-spacing: 0.5rem; */
+  font-size: 0rem;
+  line-height: 0rem;
   font-weight: bold;
-  /* text-transform: uppercase; */
   color: white;
+  margin-bottom: 2rem;
+}
+
+.hero-color,
+.hero-small {
+  font-size: 1rem;
+  line-height: 1rem;
+}
+.hero-name {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.hero-color {
+  color: coral;
 }
 
 .hero-text {
@@ -424,7 +437,12 @@ video {
 
 /* Add Media Queries for Large Screens */
 @media (min-width: 600px) {
-  .hero-heading {
+  .hero-color,
+  .hero-small {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .hero-name {
     font-size: 4rem;
     line-height: 4rem;
   }
@@ -461,6 +479,10 @@ video {
     line-height: 1.5rem;
   }
 
+  .gallery-media {
+    margin-top: 6rem;
+  }
+
   .nav-bar {
     line-height: 1.5rem;
     padding: 0 4rem;
@@ -480,7 +502,12 @@ video {
 }
 
 @media (min-width: 920px) {
-  .hero-heading {
+  .hero-color,
+  .hero-small {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .hero-name {
     font-size: 6rem;
     line-height: 6rem;
   }
@@ -510,6 +537,10 @@ video {
   .about-text p {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .gallery-media {
+    margin-top: 6rem;
   }
 
   .nav-bar {
