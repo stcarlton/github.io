@@ -415,6 +415,7 @@ video {
 }
 
 .about-image img {
+  margin-top: 4rem;
   object-fit: cover;
 }
 
