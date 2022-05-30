@@ -68,7 +68,7 @@
       <h1 class="gallery-text">Projects</h1>
       <section class="portfolio-gallery">
         <div class="gallery-item gallery-text">
-          <h2>2022</h2>
+          <a href="https://github.com/stcarlton/2022"><h2>2022</h2></a>
           <h3>Description</h3>
           <p>
             2022 is a 3D, arcade style top down shooter. Kill zombies, level up,
@@ -81,22 +81,26 @@
             2022 was developed with Unity game engine. Source code is entirely
             in C# and architecture follows MVC design pattern. All visual assets
             are open source. A complete openGL build is playable in the browser
-            by clicking on the "Load Game" button (not available on mobile).
+            by clicking on the "Play Game" button (not available on mobile).
           </p>
         </div>
-        <div id="iframeDisplay" class="gallery-item gallery-media">
-          <button
-            type="button"
-            class="project-button"
-            onClick="displayIframe()"
-          >
-            Load Game
-          </button>
+        <div class="gallery-item gallery-media">
+          <a href="#iframeDisplay">
+            <button
+              type="button"
+              class="project-button"
+              onClick="displayIframe()"
+            >
+              Play Game
+            </button>
+          </a>
         </div>
       </section>
       <section class="portfolio-gallery gallery-text">
         <div class="gallery-item">
-          <h2>Casino Simulation</h2>
+          <a href="https://github.com/stcarlton/CasinoSimulation"
+            ><h2>Casino Simulation</h2></a
+          >
           <h3>Description</h3>
           <p>
             This casino simulation allows players to cash in and hit the casino
@@ -196,6 +200,7 @@
       </section>
     </section>
     <!--End About-->
+    <div id="iframeDisplay"></div>
 
     <script>
       var vid = document.getElementById("lightningvideo");
@@ -240,7 +245,7 @@
     <script>
       function displayIframe() {
         document.getElementById("iframeDisplay").innerHTML =
-          '<iframe src="https://i.simmer.io/@sethtcarlton/zombiesbeta" width="720" height="450" allowfullscreen></iframe>';
+          '<iframe src="https://i.simmer.io/@sethtcarlton/zombiesbeta" width="720" height="450" allowfullscreen class="fullscreen"></iframe>';
       }
     </script>
 
