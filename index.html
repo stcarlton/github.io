@@ -51,9 +51,7 @@
           <span class="hero-small">, my name is </span>
           <span class="hero-name">Seth Carlton</span>
         </h1>
-        <p class="hero-text">
-          Browse my software development projects where inspiration has struck
-        </p>
+        <p class="hero-text">a software developer in the Chicago area</p>
         <p>
           <a href="#projects">
             <button type="button" class="hero-button">View Projects</button>
@@ -68,6 +66,37 @@
       <h1 class="gallery-text">Projects</h1>
       <section class="portfolio-gallery">
         <div class="gallery-item gallery-text">
+          <a href="https://github.com/stcarlton/Rainman"><h2>Rainman</h2></a>
+          <h3>Description</h3>
+          <p>
+            Rainman is an augmented reality tool that suggests both a betting
+            strategy and a playing strategy based on the cards that have already
+            been played. Rainman applies computer vision to recognize cards,
+            utilizing the card positions to deduce whether each card is owned by
+            the player, the dealer or another player. The popular card counting
+            strategy "Hi-Lo" is employed to dynamically update betting and
+            playing suggestions.
+          </p>
+          <h3>Technical Overview</h3>
+          <p>
+            Rainman is an iOS app developed with Unity game engine. Source code
+            is C# and follows MVC design pattern. ARKit package is utilized for
+            AR functionality.
+          </p>
+        </div>
+        <div class="gallery-item gallery-media">
+          <video
+            id="RainmanVideo"
+            class="gallery-video"
+            src="video/RainmanDemo.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
+      </section>
+      <section class="portfolio-gallery">
+        <div class="gallery-item gallery-text">
           <a href="https://github.com/stcarlton/2022"><h2>2022</h2></a>
           <h3>Description</h3>
           <p>
@@ -80,7 +109,7 @@
           <p>
             2022 was developed with Unity game engine. Source code is entirely
             in C# and architecture follows MVC design pattern. All visual assets
-            are open source. A complete openGL build is playable in the browser
+            are open source. A complete, openGL build is playable in the browser
             by clicking on the "Play Game" button below (not available on
             mobile).
           </p>
@@ -230,9 +259,8 @@
       <section class="about-text">
         <h1>About</h1>
         <p>
-          Greetings from the Chicago area. I graduate with an MS in Computer
-          Science with honors from the University of Illinois in Springfield in
-          the Summer of 2022.
+          Greetings, I recently graduated with an MS in Computer Science with
+          honors from the University of Illinois in Springfield.
         </p>
         <p>
           I have over 10 years of experience in technology, specializing in
@@ -242,7 +270,7 @@
         </p>
         <p>
           I am passionate about software design, computer vision and augmented
-          reality. My primary area of research is in computer vision.
+          reality.
         </p>
         <div class="about-social">
           <a href="mailto:scarlton@gmail.com"
